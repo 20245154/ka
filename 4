@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+struct date{
+int y;
+int m;
+int d;
+};
+
+struct student{
+int num;
+char name[10];
+struct date birth;
+}s;
+
+int main (void){
+
+strcpy(s.name, 'KAM');
+printf("%s", s.name);
+printf("%d", s.birth.y);
+
+return 0;
+}
