@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void shiftVal(int *a, int *b, int *c) {
+int temp;
+temp = *c;
+*c = *b;
+*b = *a;
+*a = temp;
+
+}
+
+int main (void){
+int a = 0;
+int b = 10;
+int c = 20;
+printf("%d → %d → %d\n", a, b, c);
+
+shiftVal (&a, &b, &c);
+printf("%d  → %d  → %d\n", a, b, c);
+
+return 0;
+}
