@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct{
+int a;
+float b;
+} node;
+
+int main (void){
+node j;
+node *p;
+p=&j;
+
+scanf("%d %f", &p->a, &p->b);
+printf("%d %f", p->a, p->b);
+
+return 0;
+}
