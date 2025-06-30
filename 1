@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (void){
+FILE *fp = NULL;
+int ch;
+
+fp = fopen("name.txt", "r");
+if (fp == NULL){
+    printf("파일열기 실패\n");
+    return 1;
+}
+while ((ch = fgetc(fp)) != EOF){
+        fputc(ch, stdout);
+}
+fclose(fp);
+
+return 0;
+}
